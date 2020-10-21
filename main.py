@@ -15,7 +15,7 @@ def home():
 
 @app.post('/api/lyrics/v1')
 def classification_lyrics(payload: Payload):
-  model = joblib.load('model/classificationLyrics.unip')
+  model = joblib.load('classificationLyrics.unip')
   
   band = model.predict([payload.lyrics])
   probability = model.predict_proba([payload.lyrics])
