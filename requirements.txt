@@ -4,3 +4,5 @@ joblib==0.17.0
 numpy==1.19.0
 pydantic==1.6.1
 uvicorn==0.11.2
+
+scikit-learn==0.23.2
